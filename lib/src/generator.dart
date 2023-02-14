@@ -3,6 +3,8 @@ import 'dart:math';
 import 'data_item.dart';
 
 class SCDGenerator {
+  SCDGenerator._();
+
   final _random = Random();
 
   Future<List<DataItem>> generate(

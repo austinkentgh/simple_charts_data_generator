@@ -7,13 +7,13 @@ class SCDGenerator {
 
   final _random = Random();
 
-  Future<List<DataItem>> generate(
-    double open,
-    double low,
-    double high,
-    double close,
-    int count,
-  ) async {
+  Future<List<DataItem>> generate({
+    required double open,
+    required double low,
+    required double high,
+    required double close,
+    required int count,
+  }) async {
     DataItem? prev;
     var isUp = true;
     return List.generate(
